@@ -19,6 +19,16 @@
             }
         }
 
+        &.footer {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--layout-section-spacing);
+
+            @media (min-width: 940px) {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+
         &.downloads {
             display: grid;
             grid-template-columns: 1fr;
@@ -31,6 +41,11 @@
             .version {
                 display: grid;
                 grid-template-columns: 1fr;
+                grid-template-rows: auto auto 1fr auto auto;
+
+                .body {
+                    height: 100%;
+                }
 
                 a,
                 button {

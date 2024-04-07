@@ -81,6 +81,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                                 as={Link}
                                 href="https://github.com/JSPrismarine/JSPrismarine"
                                 prefetch={false}
+                                target="_blank"
                             >
                                 GitHub
                             </Header.Menu.Link>
