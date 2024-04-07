@@ -6,11 +6,11 @@
     "rewrites": [
         {
             "source": "/docs/",
-            "destination": "https://docs-prismarine.nordcom.io/"
+            "destination": "https://docs.jsprismarine.org/"
         },
         {
             "source": "/docs/:path*",
-            "destination": "https://docs-prismarine.nordcom.io/:path*"
+            "destination": "https://docs.jsprismarine.org/:path*"
         }
     ],
     "github": {
