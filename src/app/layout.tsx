@@ -52,6 +52,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                             primary: '#5CA48A',
                             secondary: '#003829'
                         },
+                        colors: {
+                            background: '#1d201e',
+                            highlight: '#191c1b'
+                        },
                         fonts: {
                             heading: font.style.fontFamily,
                             body: font.style.fontFamily,
