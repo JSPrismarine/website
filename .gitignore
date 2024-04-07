@@ -1,0 +1,39 @@
+# dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# testing
+coverage/
+apps/**/coverage/
+
+# next.js
+.next
+next.lock/
+out/
+dist/
+
+# production
+build/
+.env.local
+*ts.timestamp-*
+
+# misc
+.DS_Store
+.swc
+.bak
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# deployment
+.sentryclirc
+.vercel
+.env
+!.env.example
+
+# typescript
+*.tsbuildinfo
+.turbo

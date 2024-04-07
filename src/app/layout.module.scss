@@ -1,0 +1,8 @@
+.header {
+    .logo {
+        --height: var(--layout-block-padding-double);
+        height: var(--height);
+        max-height: var(--height);
+        width: auto;
+    }
+}
