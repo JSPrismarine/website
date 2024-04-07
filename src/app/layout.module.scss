@@ -1,4 +1,7 @@
 .header {
+    position: sticky;
+    top: 0;
+
     .logo {
         --height: var(--layout-block-padding-double);
         height: var(--height);
