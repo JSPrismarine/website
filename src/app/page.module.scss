@@ -23,10 +23,6 @@
             display: grid;
             grid-template-columns: 1fr;
             gap: var(--layout-section-spacing);
-
-            @media (min-width: 940px) {
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-            }
         }
 
         &.downloads {

@@ -11,6 +11,10 @@ export const metadata: Metadata = {
     description: 'a TypeScript Minecraft: Bedrock Edition Server',
     alternates: {
         canonical: 'https://prismarine.nordcom.io/'
+    },
+    icons: {
+        apple: '/favicon.png',
+        icon: '/favicon.png'
     }
 };
 
@@ -40,6 +44,9 @@ export default async function IndexPage() {
             <header className={`${styles.block} ${styles.header}`}>
                 <Card borderless={true} padding={false}>
                     <Heading level="h1" className={styles.heading}>
+                        JSPrismarine
+                    </Heading>
+                    <Heading level="h2">
                         a <Accented>TypeScript</Accented> Minecraft: <Accented>Bedrock Edition</Accented> Server
                     </Heading>
                 </Card>
@@ -94,6 +101,8 @@ export default async function IndexPage() {
                     </Button>
                 </Card>
             </div>
+
+            <footer className={`${styles.block} ${styles.footer}`}></footer>
         </View>
     );
 }
