@@ -51,10 +51,11 @@
     },
     "homepage": "https://nordstar.nordcom.io/",
     "dependencies": {
-        "@octokit/rest": "20.1.0",
         "@nordcom/nordstar": "0.0.52",
+        "@octokit/rest": "20.1.0",
         "next": "14.1.4",
         "react-dom": "18.2.0",
+        "react-markdown": "9.0.1",
         "react": "18.2.0",
         "sass": "1.74.1"
     },

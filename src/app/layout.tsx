@@ -1,4 +1,4 @@
-import '@/styles/globals.css';
+import '@/styles/globals.scss';
 
 import { Header, NordstarProvider, View } from '@nordcom/nordstar';
 import { Space_Grotesk, Space_Mono } from 'next/font/google';
@@ -72,8 +72,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     }}
                 >
                     <Header className={styles.header}>
-                        <Header.Logo>
-                            <Image src={logo} alt="JSPrismarine" className={styles.logo} />
+                        <Header.Logo className={styles.logo}>
+                            <Image src={logo} alt="JSPrismarine" className={styles.img} />
                         </Header.Logo>
                         <Header.Menu>
                             <Header.Menu.Link as={Link} href="/">
@@ -94,6 +94,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     </Header>
 
                     {children}
+
+                    <footer className={styles.footer}>
+                        Built with{' '}
+                        <Link href="https://nordstar.nordcom.io/" target="_blank">
+                            nordstar
+                        </Link>
+                        .
+                    </footer>
                 </NordstarProvider>
             </body>
         </html>

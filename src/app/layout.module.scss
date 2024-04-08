@@ -1,11 +1,25 @@
-.header {
-    position: sticky;
-    top: 0;
+header.header {
+    backdrop-filter: unset;
+    border-bottom: unset;
+    box-shadow: unset;
+    background-color: var(--color-accent-secondary);
 
     .logo {
-        --height: var(--layout-block-padding-double);
-        height: var(--height);
-        max-height: var(--height);
-        width: auto;
+        .img {
+            --height: var(--layout-block-padding-double);
+            height: var(--height);
+            max-height: var(--height);
+            width: auto;
+        }
+    }
+}
+
+footer.footer {
+    padding-bottom: var(--layout-block-padding);
+
+    text-align: center;
+
+    a {
+        display: inline-block;
     }
 }

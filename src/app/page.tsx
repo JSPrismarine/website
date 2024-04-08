@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Octokit } from '@octokit/rest';
 import LatestCommits from '@/components/latest-commits';
 import Image from 'next/image';
+import Release from '@/components/release';
 
 export const revalidate = 1800; // 30 minutes.
 
@@ -21,14 +22,6 @@ export const metadata: Metadata = {
 export default async function IndexPage() {
     const octokit = new Octokit({});
 
-    const releases = (
-        await octokit.repos.listReleases({
-            owner: 'JSPrismarine',
-            repo: 'JSPrismarine',
-            per_page: 10
-        })
-    ).data;
-
     const nightly = (
         await octokit.repos.listCommits({
             owner: 'JSPrismarine',
@@ -36,8 +29,6 @@ export default async function IndexPage() {
             per_page: 10
         })
     ).data[0]!;
-
-    const release = releases.find((release) => release.prerelease === false && release.name?.includes('/prismarine'));
 
     return (
         <View className={styles.container}>
@@ -85,33 +76,7 @@ export default async function IndexPage() {
                     </Button>
                 </Card>
 
-                <Card color="primary" className={styles.version}>
-                    <Label as="h2">Release build</Label>
-                    <Heading level="h3" as="label" className={styles.title}>
-                        v{release?.tag_name.split('@').at(-1) ?? 'x.x.x'}.
-                    </Heading>
-
-                    <Card.Divider />
-
-                    <div className={styles.body}>
-                        {release?.body?.split('\n').map((line) => (
-                            <p
-                                key={line}
-                                style={{
-                                    whiteSpace: 'pre-wrap'
-                                }}
-                            >
-                                {line}
-                            </p>
-                        ))}
-                    </div>
-
-                    <Card.Divider />
-
-                    <Button as={Link} href={release?.html_url} target="_blank">
-                        Release
-                    </Button>
-                </Card>
+                <Release />
             </div>
 
             <footer className={`${styles.block} ${styles.footer}`}>

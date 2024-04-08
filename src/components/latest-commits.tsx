@@ -30,13 +30,13 @@ export default async function LatestCommits() {
                 href={commits[0].html_url}
                 target="_blank"
                 title="View on GitHub"
-                className={styles.commit}
+                className={`${styles.commit} ${styles.primary}`}
             >
                 {commits[0].title} &mdash; #{commits[0].sha.slice(0, 7)}
             </Heading>
 
             {commits[0].description ? (
-                <Heading level="h4" as="p">
+                <Heading level="h4" as="p" className={`${styles.commit} ${styles.primary}`}>
                     {commits[0].description.split('\n').map((line) => (
                         <p
                             key={line}

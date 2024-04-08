@@ -56,7 +56,10 @@
                 grid-template-rows: auto auto auto 1fr auto auto;
 
                 .body {
+                    overflow: hidden;
+                    overflow-y: auto;
                     height: 100%;
+                    max-height: 8rem;
                 }
 
                 .title {

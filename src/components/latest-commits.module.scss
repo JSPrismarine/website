@@ -2,5 +2,10 @@
     .commit {
         font-family: var(--font-mono);
         text-transform: unset;
+        color: var(--color-foreground-secondary);
+
+        &.primary {
+            color: var(--color-foreground);
+        }
     }
 }
