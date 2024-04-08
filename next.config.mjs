@@ -12,10 +12,19 @@ let config = {
         optimizePackageImports: ['@nordcom/nordstar']
     },
     images: {
+        dangerouslyAllowSVG: true,
         remotePatterns: [
             {
                 protocol: 'https',
                 hostname: '**.github.io'
+            },
+            {
+                protocol: 'https',
+                hostname: 'codecov.io'
+            },
+            {
+                protocol: 'https',
+                hostname: 'img.shields.io'
             }
         ]
     },

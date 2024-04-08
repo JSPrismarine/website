@@ -3,6 +3,10 @@ import type { Metadata } from 'next';
 import styles from '@/app/page.module.scss';
 import Link from 'next/link';
 import { Octokit } from '@octokit/rest';
+import LatestCommits from '@/components/latest-commits';
+import Image from 'next/image';
+
+export const revalidate = 1800; // 30 minutes.
 
 export const metadata: Metadata = {
     title: {
@@ -10,11 +14,7 @@ export const metadata: Metadata = {
     },
     description: 'a TypeScript Minecraft: Bedrock Edition Server',
     alternates: {
-        canonical: 'https://prismarine.nordcom.io/'
-    },
-    icons: {
-        apple: '/favicon.png',
-        icon: '/favicon.png'
+        canonical: 'https://jsprismarine.org/'
     }
 };
 
@@ -53,56 +53,95 @@ export default async function IndexPage() {
             </header>
 
             <div className={`${styles.block} ${styles.commit}`}>
-                <Card color="primary">
-                    <Label>Latest Commit</Label>
-                    <Heading level="h3" as={Link} href={nightly.html_url} target="_blank">
-                        {nightly.commit.message.split('\n')[0]}
-                    </Heading>
-                    <Heading level="h4" as="p">
-                        {nightly.commit.message.split('\n').slice(1, 0).join('\n')}
-                    </Heading>
-                </Card>
+                <LatestCommits />
             </div>
 
             <div className={`${styles.block} ${styles.downloads}`}>
-                <Card className={styles.version}>
-                    <Label as="h2">Nightly builds</Label>
-                    <Heading level="h3" as="label">
-                        #{nightly.sha.slice(0, 7)}
+                <Card color="foreground" className={styles.version}>
+                    <Label as="h2">Nightly build</Label>
+                    <Heading level="h3" as="label" className={styles.title}>
+                        #{nightly.sha.slice(0, 7)}.
                     </Heading>
-                    <div className={styles.body}>{nightly.commit.message}</div>
+
                     <Card.Divider />
+
+                    <div className={styles.body}>
+                        {nightly.commit.message?.split('\n').map((line) => (
+                            <p
+                                key={line}
+                                style={{
+                                    whiteSpace: 'pre-wrap'
+                                }}
+                            >
+                                {line}
+                            </p>
+                        ))}
+                    </div>
+
+                    <Card.Divider />
+
                     <Button variant="outline" as={Link} href={nightly.html_url} target="_blank">
                         Nightly
                     </Button>
                 </Card>
 
-                <Card className={styles.version}>
-                    <Label as="h2">Testing builds</Label>
-                    <Heading level="h3" as="label">
-                        N/A
-                    </Heading>
-                    <div className={styles.body}></div>
-                    <Card.Divider />
-                    <Button variant="outline" disabled={true}>
-                        Not Available
-                    </Button>
-                </Card>
-
                 <Card color="primary" className={styles.version}>
-                    <Label as="h2">Release builds</Label>
-                    <Heading level="h3" as="label">
-                        v{release?.tag_name.split('@').at(-1) ?? 'x.x.x'}
+                    <Label as="h2">Release build</Label>
+                    <Heading level="h3" as="label" className={styles.title}>
+                        v{release?.tag_name.split('@').at(-1) ?? 'x.x.x'}.
                     </Heading>
-                    <div className={styles.body}>{release?.body}</div>
+
                     <Card.Divider />
+
+                    <div className={styles.body}>
+                        {release?.body?.split('\n').map((line) => (
+                            <p
+                                key={line}
+                                style={{
+                                    whiteSpace: 'pre-wrap'
+                                }}
+                            >
+                                {line}
+                            </p>
+                        ))}
+                    </div>
+
+                    <Card.Divider />
+
                     <Button as={Link} href={release?.html_url} target="_blank">
                         Release
                     </Button>
                 </Card>
             </div>
 
-            <footer className={`${styles.block} ${styles.footer}`}></footer>
+            <footer className={`${styles.block} ${styles.footer}`}>
+                <Card className={styles.badges}>
+                    <Image
+                        alt="Code Coverage"
+                        title="Code Coverage"
+                        src="https://img.shields.io/codecov/c/github/JSPrismarine/JSPrismarine?token=WLXLSJOGN3&color=63A375"
+                        width={65}
+                        height={15}
+                        className={styles.badge}
+                    />
+                    <Image
+                        alt="Contributors"
+                        title="Contributors"
+                        src="https://img.shields.io/github/contributors/JSPrismarine/JSPrismarine?color=%23E30B5D"
+                        width={65}
+                        height={15}
+                        className={styles.badge}
+                    />
+                    <Image
+                        alt="npm"
+                        title="npm"
+                        src="https://img.shields.io/npm/dt/@jsprismarine/prismarine"
+                        width={65}
+                        height={15}
+                        className={styles.badge}
+                    />
+                </Card>
+            </footer>
         </View>
     );
 }

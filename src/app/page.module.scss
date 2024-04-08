@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: var(--layout-section-spacing);
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     .block {
         width: 100%;
@@ -23,6 +23,22 @@
             display: grid;
             grid-template-columns: 1fr;
             gap: var(--layout-section-spacing);
+
+            .badges {
+                display: flex;
+                gap: var(--layout-block-padding);
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .badge {
+                    position: relative;
+                    height: auto;
+                    max-height: 100%;
+                    width: auto;
+                    object-fit: contain;
+                }
+            }
         }
 
         &.downloads {
@@ -31,16 +47,20 @@
             gap: var(--layout-section-spacing);
 
             @media (min-width: 940px) {
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
             }
 
             .version {
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: auto auto 1fr auto auto;
+                grid-template-rows: auto auto auto 1fr auto auto;
 
                 .body {
                     height: 100%;
+                }
+
+                .title {
+                    font-family: var(--font-mono);
                 }
 
                 a,

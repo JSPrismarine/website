@@ -29,6 +29,11 @@ export const metadata: Metadata = {
     title: {
         default: '',
         template: `%s | JSPrismarine`
+    },
+    description: 'a TypeScript Minecraft: Bedrock Edition Server',
+    icons: {
+        apple: '/favicon.png',
+        icon: '/favicon.png'
     }
 };
 
