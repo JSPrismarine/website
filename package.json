@@ -53,7 +53,7 @@
     "dependencies": {
         "@nordcom/nordstar": "0.0.54",
         "@octokit/rest": "20.1.0",
-        "next": "14.2.2",
+        "next": "14.2.3",
         "react-dom": "18.2.0",
         "react-markdown": "9.0.1",
         "react": "18.2.0",
@@ -67,7 +67,7 @@
         "@typescript-eslint/parser": "7.7.1",
         "autoprefixer": "10.4.19",
         "concurrently": "8.2.2",
-        "eslint-config-next": "14.2.2",
+        "eslint-config-next": "14.2.3",
         "eslint-config-prettier": "9.1.0",
         "eslint-plugin-import": "2.29.1",
         "eslint-plugin-jsdoc": "48.2.3",
