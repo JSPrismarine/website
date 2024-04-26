@@ -10,22 +10,22 @@ importers:
     dependencies:
       '@nordcom/nordstar':
         specifier: 0.0.54
-        version: 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
+        version: 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@octokit/rest':
         specifier: 20.1.0
         version: 20.1.0
       next:
         specifier: 14.2.3
-        version: 14.2.3(react-dom@18.3.0(react@18.3.0))(react@18.3.0)(sass@1.75.0)
+        version: 14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.75.0)
       react:
-        specifier: 18.3.0
-        version: 18.3.0
+        specifier: 18.3.1
+        version: 18.3.1
       react-dom:
-        specifier: 18.3.0
-        version: 18.3.0(react@18.3.0)
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       react-markdown:
         specifier: 9.0.1
-        version: 9.0.1(@types/react@18.3.0)(react@18.3.0)
+        version: 9.0.1(@types/react@18.3.0)(react@18.3.1)
       sass:
         specifier: 1.75.0
         version: 1.75.0
@@ -76,8 +76,8 @@ importers:
         specifier: 7.34.1
         version: 7.34.1(eslint@8.57.0)
       eslint-plugin-react-hooks:
-        specifier: 4.6.1
-        version: 4.6.1(eslint@8.57.0)
+        specifier: 4.6.2
+        version: 4.6.2(eslint@8.57.0)
       eslint-plugin-simple-import-sort:
         specifier: 12.1.0
         version: 12.1.0(eslint@8.57.0)
@@ -943,8 +943,8 @@ packages:
       eslint-config-prettier:
         optional: true
 
-  eslint-plugin-react-hooks@4.6.1:
-    resolution: {integrity: sha512-Ck77j8hF7l9N4S/rzSLOWEKpn994YH6iwUK8fr9mXIaQvGpQYmOnQLbiue1u5kI5T1y+gdgqosnEAO9NCz0DBg==}
+  eslint-plugin-react-hooks@4.6.2:
+    resolution: {integrity: sha512-QzliNJq4GinDBcD8gPB5v0wh6g8q3SUi6EFF0x8N/BL9PoVs0atuGc47ozMRyOWAKdwaZ5OnbOEa3WR+dSGKuQ==}
     engines: {node: '>=10'}
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
@@ -1717,10 +1717,10 @@ packages:
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
-  react-dom@18.3.0:
-    resolution: {integrity: sha512-zaKdLBftQJnvb7FtDIpZtsAIb2MZU087RM8bRDZU8LVCCFYjPTsDZJNFUWPcVz3HFSN1n/caxi0ca4B/aaVQGQ==}
+  react-dom@18.3.1:
+    resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
     peerDependencies:
-      react: ^18.3.0
+      react: ^18.3.1
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -1734,8 +1734,8 @@ packages:
       '@types/react': '>=18'
       react: '>=18'
 
-  react@18.3.0:
-    resolution: {integrity: sha512-RPutkJftSAldDibyrjuku7q11d3oy6wKOyPe5K1HA/HwwrXcEqBdHsLypkC2FFYjP7bPUa6gbzSBhw4sY2JcDg==}
+  react@18.3.1:
+    resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
     engines: {node: '>=0.10.0'}
 
   readdirp@3.6.0:
@@ -1808,8 +1808,8 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
-  scheduler@0.23.1:
-    resolution: {integrity: sha512-5GKS5JGfiah1O38Vfa9srZE4s3wdHbwjlCrvIookrg2FO9aIwKLOJXuJQFlEfNcVSOXuaL2hzDeY20uVXcUtrw==}
+  scheduler@0.23.2:
+    resolution: {integrity: sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==}
 
   semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
@@ -2232,84 +2232,84 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  '@nordcom/nordstar-accented@0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
+  '@nordcom/nordstar-accented@0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@nordcom/nordstar-system': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      '@nordcom/nordstar-system': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
-  '@nordcom/nordstar-button@0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
+  '@nordcom/nordstar-button@0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@nordcom/nordstar-system': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      '@nordcom/nordstar-system': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
-  '@nordcom/nordstar-card@0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
+  '@nordcom/nordstar-card@0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@nordcom/nordstar-system': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      '@nordcom/nordstar-system': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
-  '@nordcom/nordstar-details@0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
+  '@nordcom/nordstar-details@0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@nordcom/nordstar-card': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      '@nordcom/nordstar-label': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      '@nordcom/nordstar-system': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      '@nordcom/nordstar-card': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@nordcom/nordstar-label': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@nordcom/nordstar-system': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
-  '@nordcom/nordstar-header@0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
+  '@nordcom/nordstar-header@0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@nordcom/nordstar-card': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      '@nordcom/nordstar-system': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      '@nordcom/nordstar-view': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      '@nordcom/nordstar-card': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@nordcom/nordstar-system': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@nordcom/nordstar-view': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
-  '@nordcom/nordstar-heading@0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
+  '@nordcom/nordstar-heading@0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@nordcom/nordstar-system': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      '@nordcom/nordstar-system': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
-  '@nordcom/nordstar-input@0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
+  '@nordcom/nordstar-input@0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@nordcom/nordstar-system': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      '@nordcom/nordstar-system': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
-  '@nordcom/nordstar-label@0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
+  '@nordcom/nordstar-label@0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@nordcom/nordstar-system': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      '@nordcom/nordstar-system': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
-  '@nordcom/nordstar-system@0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
+  '@nordcom/nordstar-system@0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
       the-new-css-reset: 1.11.2
 
-  '@nordcom/nordstar-view@0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
+  '@nordcom/nordstar-view@0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@nordcom/nordstar-system': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      '@nordcom/nordstar-system': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
-  '@nordcom/nordstar@0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)':
+  '@nordcom/nordstar@0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@nordcom/nordstar-accented': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      '@nordcom/nordstar-button': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      '@nordcom/nordstar-card': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      '@nordcom/nordstar-details': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      '@nordcom/nordstar-header': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      '@nordcom/nordstar-heading': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      '@nordcom/nordstar-input': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      '@nordcom/nordstar-label': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      '@nordcom/nordstar-system': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      '@nordcom/nordstar-view': 0.0.54(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      '@nordcom/nordstar-accented': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@nordcom/nordstar-button': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@nordcom/nordstar-card': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@nordcom/nordstar-details': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@nordcom/nordstar-header': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@nordcom/nordstar-heading': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@nordcom/nordstar-input': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@nordcom/nordstar-label': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@nordcom/nordstar-system': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@nordcom/nordstar-view': 0.0.54(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   '@nordcom/prettier@0.1.1': {}
 
@@ -3022,7 +3022,7 @@ snapshots:
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.4.5))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       eslint-plugin-jsx-a11y: 6.8.0(eslint@8.57.0)
       eslint-plugin-react: 7.34.1(eslint@8.57.0)
-      eslint-plugin-react-hooks: 4.6.1(eslint@8.57.0)
+      eslint-plugin-react-hooks: 4.6.2(eslint@8.57.0)
     optionalDependencies:
       typescript: 5.4.5
     transitivePeerDependencies:
@@ -3177,7 +3177,7 @@ snapshots:
     optionalDependencies:
       eslint-config-prettier: 9.1.0(eslint@8.57.0)
 
-  eslint-plugin-react-hooks@4.6.1(eslint@8.57.0):
+  eslint-plugin-react-hooks@4.6.2(eslint@8.57.0):
     dependencies:
       eslint: 8.57.0
 
@@ -3957,7 +3957,7 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  next@14.2.3(react-dom@18.3.0(react@18.3.0))(react@18.3.0)(sass@1.75.0):
+  next@14.2.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.75.0):
     dependencies:
       '@next/env': 14.2.3
       '@swc/helpers': 0.5.5
@@ -3965,9 +3965,9 @@ snapshots:
       caniuse-lite: 1.0.30001606
       graceful-fs: 4.2.11
       postcss: 8.4.31
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
-      styled-jsx: 5.1.1(react@18.3.0)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      styled-jsx: 5.1.1(react@18.3.1)
     optionalDependencies:
       '@next/swc-darwin-arm64': 14.2.3
       '@next/swc-darwin-x64': 14.2.3
@@ -4147,17 +4147,17 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  react-dom@18.3.0(react@18.3.0):
+  react-dom@18.3.1(react@18.3.1):
     dependencies:
       loose-envify: 1.4.0
-      react: 18.3.0
-      scheduler: 0.23.1
+      react: 18.3.1
+      scheduler: 0.23.2
 
   react-is@16.13.1: {}
 
   react-is@18.2.0: {}
 
-  react-markdown@9.0.1(@types/react@18.3.0)(react@18.3.0):
+  react-markdown@9.0.1(@types/react@18.3.0)(react@18.3.1):
     dependencies:
       '@types/hast': 3.0.4
       '@types/react': 18.3.0
@@ -4165,7 +4165,7 @@ snapshots:
       hast-util-to-jsx-runtime: 2.3.0
       html-url-attributes: 3.0.0
       mdast-util-to-hast: 13.1.0
-      react: 18.3.0
+      react: 18.3.1
       remark-parse: 11.0.0
       remark-rehype: 11.1.0
       unified: 11.0.4
@@ -4174,7 +4174,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  react@18.3.0:
+  react@18.3.1:
     dependencies:
       loose-envify: 1.4.0
 
@@ -4271,7 +4271,7 @@ snapshots:
       immutable: 4.3.5
       source-map-js: 1.2.0
 
-  scheduler@0.23.1:
+  scheduler@0.23.2:
     dependencies:
       loose-envify: 1.4.0
 
@@ -4404,10 +4404,10 @@ snapshots:
     dependencies:
       inline-style-parser: 0.2.3
 
-  styled-jsx@5.1.1(react@18.3.0):
+  styled-jsx@5.1.1(react@18.3.1):
     dependencies:
       client-only: 0.0.1
-      react: 18.3.0
+      react: 18.3.1
 
   supports-color@2.0.0: {}
 
