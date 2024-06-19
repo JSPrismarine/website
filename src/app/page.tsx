@@ -1,11 +1,14 @@
-import { Accented, Button, Card, Heading, Label, View } from '@nordcom/nordstar';
-import type { Metadata } from 'next';
 import styles from '@/app/page.module.scss';
-import Link from 'next/link';
-import { Octokit } from '@octokit/rest';
-import LatestCommits from '@/components/latest-commits';
+
 import Image from 'next/image';
+
+import { Accented, Card, Heading, View } from '@nordcom/nordstar';
+
+import LatestCommits from '@/components/latest-commits';
+import Nightly from '@/components/nightly';
 import Release from '@/components/release';
+
+import type { Metadata } from 'next';
 
 export const revalidate = 1800; // 30 minutes.
 
@@ -20,16 +23,6 @@ export const metadata: Metadata = {
 };
 
 export default async function IndexPage() {
-    const octokit = new Octokit({});
-
-    const nightly = (
-        await octokit.repos.listCommits({
-            owner: 'JSPrismarine',
-            repo: 'JSPrismarine',
-            per_page: 10
-        })
-    ).data[0]!;
-
     return (
         <View className={styles.container}>
             <header className={`${styles.block} ${styles.header}`}>
@@ -48,34 +41,7 @@ export default async function IndexPage() {
             </div>
 
             <div className={`${styles.block} ${styles.downloads}`}>
-                <Card color="foreground" className={styles.version}>
-                    <Label as="h2">Nightly build</Label>
-                    <Heading level="h3" as="label" className={styles.title}>
-                        #{nightly.sha.slice(0, 7)}.
-                    </Heading>
-
-                    <Card.Divider />
-
-                    <div className={styles.body}>
-                        {nightly.commit.message?.split('\n').map((line) => (
-                            <p
-                                key={line}
-                                style={{
-                                    whiteSpace: 'pre-wrap'
-                                }}
-                            >
-                                {line}
-                            </p>
-                        ))}
-                    </div>
-
-                    <Card.Divider />
-
-                    <Button variant="outline" as={Link} href={nightly.html_url} target="_blank">
-                        Nightly
-                    </Button>
-                </Card>
-
+                <Nightly />
                 <Release />
             </div>
 

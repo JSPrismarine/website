@@ -1,13 +1,15 @@
 import '@/styles/globals.scss';
+import styles from '@/app/layout.module.scss';
 
-import { Header, NordstarProvider, View } from '@nordcom/nordstar';
 import { Space_Grotesk, Space_Mono } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
-import type { Metadata, Viewport } from 'next';
+
+import { Header, NordstarProvider } from '@nordcom/nordstar';
 
 import logo from '@/assets/logo.png';
-import styles from '@/app/layout.module.scss';
+
+import type { Metadata, Viewport } from 'next';
 
 const font = Space_Grotesk({
     weight: 'variable',

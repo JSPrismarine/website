@@ -1,9 +1,11 @@
-import { Button, Card, Heading, Label } from '@nordcom/nordstar';
-import { Octokit } from '@octokit/rest';
-import Link from 'next/link';
-import Markdown from 'react-markdown';
-
 import styles from './release.module.scss';
+
+import Markdown from 'react-markdown';
+import Link from 'next/link';
+
+import { Button, Card, Heading, Label } from '@nordcom/nordstar';
+
+import { Octokit } from '@octokit/rest';
 
 export default async function Release() {
     const octokit = new Octokit({});
@@ -22,16 +24,16 @@ export default async function Release() {
         <Card color="primary" className={styles.container}>
             <Label as="h2">Release build</Label>
             <Heading level="h3" as="label" className={styles.title}>
-                v{release?.tag_name.split('@').at(-1) ?? 'x.x.x'}.
+                v{release.tag_name.split('@').at(-1) ?? 'x.x.x'}.
             </Heading>
 
             <Card.Divider />
 
-            <Markdown className={styles.body}>{release?.body}</Markdown>
+            <Markdown className={styles.body}>{release.body}</Markdown>
 
             <Card.Divider />
 
-            <Button as={Link} href={release?.html_url} target="_blank">
+            <Button as={Link} href={release.html_url} target="_blank">
                 Learn More
             </Button>
         </Card>

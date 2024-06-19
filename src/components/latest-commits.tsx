@@ -1,8 +1,10 @@
-import { Card, Heading, Label } from '@nordcom/nordstar';
-import { Octokit } from '@octokit/rest';
+import styles from './latest-commits.module.scss';
+
 import Link from 'next/link';
 
-import styles from './latest-commits.module.scss';
+import { Card, Heading, Label } from '@nordcom/nordstar';
+
+import { Octokit } from '@octokit/rest';
 
 export default async function LatestCommits() {
     const octokit = new Octokit({});
