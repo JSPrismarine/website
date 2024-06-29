@@ -3,7 +3,7 @@
     "version": 2,
     "trailingSlash": true,
     "framework": "nextjs",
-    "rewrites": [
+    "redirects": [
         {
             "source": "/docs/",
             "destination": "https://docs.jsprismarine.org/"
