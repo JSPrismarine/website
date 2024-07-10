@@ -53,7 +53,7 @@
     "dependencies": {
         "@nordcom/nordstar": "0.0.55",
         "@octokit/rest": "21.0.0",
-        "next": "14.2.4",
+        "next": "14.2.5",
         "pretty-bytes": "^6.1.1",
         "react": "18.3.1",
         "react-dom": "18.3.1",
@@ -69,7 +69,7 @@
         "autoprefixer": "10.4.19",
         "concurrently": "8.2.2",
         "eslint": "8.57.0",
-        "eslint-config-next": "14.2.4",
+        "eslint-config-next": "14.2.5",
         "eslint-config-prettier": "9.1.0",
         "eslint-plugin-import": "2.29.1",
         "eslint-plugin-jsdoc": "48.6.0",
