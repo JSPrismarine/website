@@ -58,7 +58,7 @@
         "react": "18.3.1",
         "react-dom": "18.3.1",
         "react-markdown": "9.0.1",
-        "sass": "1.79.2"
+        "sass": "1.79.3"
     },
     "devDependencies": {
         "@nordcom/prettier": "0.1.1",
