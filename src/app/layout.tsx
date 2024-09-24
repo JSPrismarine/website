@@ -36,6 +36,16 @@ export const metadata: Metadata = {
     icons: {
         apple: '/favicon.png',
         icon: '/favicon.png'
+    },
+    robots: {
+        follow: true,
+        index: true
+    },
+    referrer: 'origin',
+    formatDetection: {
+        email: false,
+        address: false,
+        telephone: false
     }
 };
 
@@ -99,8 +109,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
                     <footer className={styles.footer}>
                         Built with{' '}
-                        <Link href="https://nordstar.nordcom.io/" target="_blank">
-                            nordstar
+                        <Link href="https://nordstar.dev/?utm_campaign=website&utm_source=jsprismarine" target="_blank">
+                            Nordstar
+                        </Link>
+                        {' by '}
+                        <Link href="https://nordcom.io/?utm_campaign=website&utm_source=jsprismarine" target="_blank">
+                            Nordcom AB
                         </Link>
                         .
                     </footer>
