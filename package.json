@@ -53,7 +53,7 @@
     "dependencies": {
         "@nordcom/nordstar": "0.0.62",
         "@octokit/rest": "21.0.2",
-        "next": "14.2.17",
+        "next": "14.2.32",
         "pretty-bytes": "^6.1.1",
         "react": "18.3.1",
         "react-dom": "18.3.1",
